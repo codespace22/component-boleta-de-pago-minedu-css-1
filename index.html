@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boleta de pago Peru</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="boleta">
+      <div class="boleta__img">
+        <img src="assets/img/logo-ministerio-eduacion.png" alt="logo" />
+      </div>
+      <header>
+        <p>
+          CODIGO MODULAR SECUENCIAL <br />
+          <span class="datos__transaccion"> 1023847757-211001 </span>
+        </p>
+        <h1 class="datos__titulo">BOLETA DE PAGO</h1>
+        <h2 class="datos__fecha">JUNIO - 2020</h2>
+      </header>
+
+      <div class="boleta__tables">
+        <div class="table-1">
+          <table class="datos__table">
+            <thead class="datos__thead">
+              <tr>
+                <th class="datos__dpersonales">DATOS PERSONALES</th>
+                <th class="datos__tipoplanilla" colspan="2">
+                  TIPO PLANILLA ACTIVO
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><strong>APELLIDOS</strong> <br />LUNA VICTORIA MONZON</td>
+                <td><strong>NOMBRES</strong> <br />ROBERTO</td>
+                <td><strong>DNI</strong> <br />12123455</td>
+              </tr>
+              <tr>
+                <td><strong>CENTRO DE TRABAJO</strong> <br />PON DATO FLOJO</td>
+                <td><strong>CARGO</strong> <br />PON DATO FLOJO</td>
+                <td><strong>TIPO SERVIDOR</strong> <br />PON DATO FLOJO</td>
+              </tr>
+              <tr>
+                <td><strong>REGIMEN LABORAL</strong> <br />PON DATO FLOJO</td>
+                <td><strong>VINCULO LABORAL</strong> <br />PON DATO FLOJO</td>
+                <td><strong>ENTIDAD BANCARIA</strong> <br />PON DATO FLOJO</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>LEYENDA PERMANENTE</strong> <br />PON DATO FLOJO
+                </td>
+                <td>
+                  <strong>DOC. DE REFERENCIA</strong> <br />PON DATO FLOJO
+                </td>
+                <td>
+                  <strong>RÉGIMEN PENSONARIO</strong> <br />PON DATO FLOJO
+                </td>
+              </tr>
+              <tr>
+                <td><strong>JORNADA LABORAL</strong> <br />PON DATO FLOJO</td>
+                <td><strong>DIAS / MENSUAL</strong> <br />PON DATO FLOJO</td>
+                <td><strong>ESCALA MAGISTERIAL</strong> <br />ESCALA 1</td>
+              </tr>
+              <tr>
+                <td><strong>SITUACION</strong> <br />PON DATO FLOJO</td>
+                <td><strong>NIVEL EDUCATIVO</strong> <br />PON DATO FLOJO</td>
+                <td>
+                  <strong>CODIGO PLAZA NEXUS</strong> <br />PON DATO FLOJO
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>DIAS DE INASISTENCIA</strong> <br />PON DATO FLOJO
+                </td>
+                <td><strong>TARDANZA (HH:MM)</strong> <br />00:00</td>
+                <td><strong>DIAS DE LICENCIA</strong> <br />PON DATO FLOJO</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td><strong>CODIGO MODULAR</strong> <br />07312099</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="table-2">
+          <header class="ingresos__header"><h3>INGRESOS</h3></header>
+          <table>
+            <thead class="ingresos__thead">
+              <tr>
+                <th class="t-left">CONCEPTO</th>
+                <th class="t-right">MONTO</th>
+              </tr>
+            </thead>
+            <tbody class="ingresos__tbody">
+              <tr>
+                <td class="t-left">RIM_Ley 29914</td>
+                <td class="t-right">S/. 2,300.10</td>
+              </tr>
+              <tr>
+                <td class="t-left">asmgul_lrm</td>
+                <td class="t-right">S/. 140.00</td>
+              </tr>
+              <tr>
+                <td class="t-left">asgeib_lrm</td>
+                <td class="t-right">S/. 50.00</td>
+              </tr>
+              <tr>
+                <td class="t-left">asgeibalrm</td>
+                <td class="t-right">S/. 100.00</td>
+              </tr>
+              <tr>
+                <td class="t-left">asert2_lrm</td>
+                <td class="t-right">S/. 100.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-3">
+          <header class="descuentos__header"><h3>DESCUENTOS</h3></header>
+          <table>
+            <thead class="descuentos__thead">
+              <tr>
+                <th class="t-left">CONCEPTO</th>
+                <th class="t-right">MONTO</th>
+              </tr>
+            </thead>
+            <tbody class="descuentos__tbody">
+              <tr>
+                <td class="t-left">Derr Magisteria</td>
+                <td class="t-right">S/. 21.50</td>
+              </tr>
+              <tr>
+                <td class="t-left">DL. 25897 AFP</td>
+                <td class="t-right">S/. 192.86</td>
+              </tr>
+              <tr>
+                <td class="t-left">quintacat</td>
+                <td class="t-right">S/. 36.60</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

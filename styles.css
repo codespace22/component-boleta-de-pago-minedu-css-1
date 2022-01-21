@@ -1,0 +1,169 @@
+:root {
+  --primary-color: #bdced1;
+  --t1: 2.441rem;
+  --t2: 1.953rem;
+  --t3: 1.563rem;
+  --t4: 1.25rem;
+  --tnormal: 1rem;
+  --s1: 0.8rem;
+  --s2: 0.64rem;
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --t1: 1.953rem;
+    --t2: 1.563rem;
+    --t3: 1.25rem;
+    --t4: 1rem;
+    --tnormal: 0.8rem;
+    --s1: 0.64rem;
+  }
+}
+
+body {
+  font-size: var(--tnormal);
+  min-height: 100vh;
+  place-content: center;
+}
+
+h1 {
+  font-size: var(--t1);
+}
+h2 {
+  font-size: var(--t2);
+}
+h3 {
+  font-size: var(--t3);
+}
+
+.t-left {
+  text-align: left;
+}
+.t-right {
+  text-align: right;
+}
+.t-center {
+  text-align: center;
+}
+
+.boleta {
+  padding: 2rem;
+}
+
+.boleta__img {
+  width: 25rem;
+  height: 5.8rem;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.boleta__tables {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
+  grid-auto-rows: repeat(auto-fill, 1fr);
+  gap: 1rem;
+}
+
+.table-1 {
+  grid-column: span 2;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+table {
+  font-family: arial, sans-serif;
+  /* border-collapse: collapse; */
+  width: 100%;
+}
+
+thead th {
+  padding: 1rem;
+}
+
+thead tr {
+  background-color: var(--primary-color);
+}
+
+.datos__transaccion {
+  text-align: start;
+}
+.datos__titulo {
+  text-align: center;
+}
+.datos__fecha {
+  color: orange;
+  text-align: right;
+}
+.datos__dpersonales {
+  text-align: start;
+}
+.datos__tipoplanilla {
+  text-align: right;
+}
+
+.ingresos__header,
+.descuentos__header {
+  padding: 0 1rem;
+  background-color: var(--primary-color);
+}
+
+.ingresos__thead tr,
+.descuentos__thead tr {
+  background-color: transparent;
+}
+
+tbody tr td {
+  border-bottom: 1px solid var(--primary-color);
+  padding: 1rem;
+}
+
+tfoot td {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 760px) {
+  .table-1 {
+    grid-column: 1;
+  }
+  .boleta__img {
+    width: 100%;
+  }
+  thead {
+    display: none;
+  }
+  tr:nth-of-type(2n) {
+    background-color: inherit;
+  }
+  tr td:first-child {
+    background: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  tbody td {
+    display: block;
+    text-align: center;
+  }
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align: center;
+  }
+  /* .datos__table {
+    display: table-cell;
+  }
+  .datos__thead tr th:last-child {
+    padding-left: 0;
+  } */
+}
+
+/* tr:nth-child(even) {
+  background-color: #dddddd;
+} */
